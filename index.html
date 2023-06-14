@@ -213,12 +213,27 @@
         {
                 display: none;        
         }
+        .when-smaller
+        {
+                display: none;        
+        }
         @media (max-width: 991px)
         {
-            .when-small
+            @media (min-width: 400px)
             {
-                display: block;
+                .when-small
+                {
+                    display: block;
+                }
             }
+            @media (max-width: 399px)
+            {
+                .when-smaller
+                {
+                    display: block;
+                }
+            }
+            
         }
         .when-bigimg
         {
@@ -235,11 +250,25 @@
         {
                 display: none;        
         }
+        .when-smallerimg
+        {
+                display: none;        
+        }    
         @media (max-width: 1225px)
         {
-            .when-smallimg
+            @media (min-width: 400px)
             {
-                display: block;
+                .when-smallimg
+                {
+                    display: block;
+                }
+            }
+            @media (max-width: 399px)
+            {
+                .when-smallerimg
+                {
+                    display: block;
+                }
             }
             img.s
             {
@@ -333,8 +362,8 @@
 			<div class="col-lg-4" >
 				<br>
             			<a href=""><img src="Photos/logo.png" alt="Loading..." width="250" height="80" class="when-big"></a>
-                <center><a href=""><img src="Photos/logo.png" alt="Loading..." width="250" height="80" class="when-small"></a></center>
-            			<p class="g1 center"><span>...</span>makes <strong>spiffy HTML5<br>  site templates</strong> that are: </p>
+                <center><a href=""><img src="Photos/logo.png" alt="Loading..." width="250" height="80" class="when-small when-smaller"></a></center>
+            			<p class="g1 center"><span>...</span>makes <strong>spiffy HTML5<br class="when-small">  site templates</strong> that are: </p>
 			</div>
 			<div class="col-lg-2">
 				<div class="center">
@@ -346,6 +375,7 @@
 				</ul>
 				</div>
 			</div>
+            
 			<div class="col-lg-2">
 				<div class="center">
 				<ul>
@@ -356,6 +386,7 @@
 				</ul>
 				</div>
 			</div>
+
 			<div class="col-lg-2">
 				<div class="center">
 				<ul>
@@ -366,6 +397,8 @@
 				</ul>
 				</div>
 			</div>
+
+            
 			<div class="col-lg-2">
 				<div class="center">
 				<ul>
@@ -401,7 +434,7 @@
 						<p class="color" style="float: right; font-size: 14px;"><br>Get notified when I release new stuff!  &nbsp;&nbsp;&nbsp;&nbsp;</p> 	
 					</div>
 			</div>
-                <div class="when-small">
+                <div class="when-small when-smaller">
                 <center>
                     <div class="line"></div>
                     <p class="color" style="font-size: 14px;"><br>Get notified when I release new stuff!</p><br>
@@ -453,7 +486,7 @@
                                 <button class="in2">Free Download (213,855)</button>
                             </div>
                         </div>
-                        <div class="when-smallimg">
+                        <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                             <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -492,7 +525,7 @@
                             <button class="in22">Free Download (348,683)</button>
                         </div>
                         </div>
-                        <div class="when-smallimg">
+                        <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -531,7 +564,7 @@
                             <button class="in22">Free Download (219,296)</button>
                         </div>
                         </div>
-                        <div class="when-smallimg">
+                        <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -570,7 +603,7 @@
                             <button class="in22">Free Download (205,561)</button>
                         </div>
                         </div>
-                        <div class="when-smallimg">
+                        <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -608,7 +641,7 @@
                                 <button class="in22">Free Download (384,779)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -645,7 +678,7 @@
                                 <button class="in2">Free Download (300,396)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -682,7 +715,7 @@
                                 <button class="in22">Free Download (244,808)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -719,7 +752,7 @@
                                 <button class="in22">Free Download (217,020)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -756,7 +789,7 @@
                                 <button class="in22">Free Download (210,409)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -793,7 +826,7 @@
                                 <button class="in22">Free Download (266,554)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -830,7 +863,7 @@
                                 <button class="in22">Free Download (333,805)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -868,7 +901,7 @@
                                 <button class="in22">Free Download (258,217)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -905,7 +938,7 @@
                                 <button class="in22">Free Download (304,570)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -942,7 +975,7 @@
                                 <button class="in22">Free Download (255,199)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -979,7 +1012,7 @@
                                 <button class="in22">Free Download (177,987)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1016,7 +1049,7 @@
                                 <button class="in22">Free Download (246,051)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1053,7 +1086,7 @@
                                 <button class="in22">Free Download (407,751)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1090,7 +1123,7 @@
                                 <button class="in22">Free Download (229,865)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1127,7 +1160,7 @@
                                 <button class="in22">Free Download (190,309)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1164,7 +1197,7 @@
                                 <button class="in22">Free Download (385,010)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1201,7 +1234,7 @@
                                 <button class="in22">Free Download (315,233)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1239,7 +1272,7 @@
                                 <button class="in2">Free Download (215,008)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1276,7 +1309,7 @@
                                 <button class="in22">Free Download (327,692)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1313,7 +1346,7 @@
                                 <button class="in22">Free Download (236,189)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1350,7 +1383,7 @@
                                 <button class="in22">Free Download (456,433)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1387,7 +1420,7 @@
                                 <button class="in22">Free Download (391,464)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1424,7 +1457,7 @@
                                 <button class="in22">Free Download (213,855)</button>
                             </div>
                         </div>
-                <div class="when-smallimg">
+                <div class="when-smallimg when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1482,6 +1515,27 @@
                                 </nav>
                             </div>
                         </div>
+                 <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Tessellate</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1499,6 +1553,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Prologue</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1556,6 +1631,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Helios</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1573,6 +1669,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Telephasic</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1630,6 +1747,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Strongly Typed</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1647,6 +1785,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Paralleisn</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1704,6 +1863,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Escape Velocity</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1721,6 +1901,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Astral</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1778,6 +1979,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Striped</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1795,6 +2017,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Dopetrope</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1852,6 +2095,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Miniport</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1869,6 +2133,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">TXT</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -1926,6 +2211,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Verti</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -1943,6 +2249,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Zerofour</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -2000,6 +2327,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Arcana</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -2037,6 +2385,27 @@
                                 </nav>
                             </div>
                         </div>
+                <div class="when-smallerimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Halcyonic</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <br><br><br>
                     </div>
             
@@ -2054,6 +2423,27 @@
                             </div>
                         </div>
                 <div class="when-smallimg">
+                            <div style="z-index: 10000;">
+                                <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
+                                    <div class="container-fluid" style="position: absolute;">
+                                        <div>
+					                       <li class="nav-item nodot">
+                                                <a class="nav-link" href="#" style="color: gray;">Minimaxing</a>
+                                            </li>
+                                        </div>
+                                        <form class="d-flex">
+					                       <div>
+                                               <br>
+                                                <li class="nav-item topnav-right nodot">
+                                                    <button class="ln2 in22">Download</button>
+                                               </li>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                <div class="when-smallerimg">
                             <div style="z-index: 10000;">
                                 <nav class="navbar navbar-light" style="border: 1px solid #d9dbe0; border-top: none; height: 60px;">
                                     <div class="container-fluid" style="position: absolute;">
@@ -2113,6 +2503,22 @@
                                 <a href="https://pixelarity.com"><button class="bb"><strong>START BROWSING</strong></button></a>
                             </div>
                     </div>
+                
+                <img src="Photos/foot.png" alt="Loading..." width="1300" height="250" class="intro when-smallerimg s"> 
+                <div class="when-smaller">
+                            <div style="color: white; position: absolute; top: 5%; left: 28%;">
+                                <button class="textt" style="color: white;"><h1><strong>PIXELARITY</strong></h1></button>
+                            </div>
+                            <div style="color: white; position: absolute; top: 30%; left: 0%;">
+                                <p><span>Unlimited</span> access to <strong>80+</strong> responsive site templates (including 
+                                everything at HTML5 UP), plus extras and support for just <strong>$19.</strong></p>
+                            </div>
+                        
+                            <div style="color: white; position: absolute; top: 63%; left: 14%;">
+                                <br>
+                                <a href="https://pixelarity.com"><button class="bb"><strong>START BROWSING</strong></button></a>
+                            </div>
+                    </div>
             </div>
         </div>
         
@@ -2123,7 +2529,7 @@
         
         <!-- Footer -->
         <div class="text-center">
-            <foote class="when-big">
+            <footer class="when-big">
                     <div>
                         <p style="color: #676d79;">Built by <a href="https://twitter.com/ajlkn" style="color: #676d79">AJ</a> with <a href="https://github.com/ajlkn/responsive-tools" style="color: #676d79">Responsive Tools</a>&nbsp;&nbsp;ꞏ  &nbsp;Licensed under the <a href="licanse.html" style="color: #676d79">Creative Commons Attribution</a> license</p> 
                     </div>
@@ -2147,8 +2553,8 @@
                     <p style="color: #676d79">© HTML5 UP. Over <strong>15,850,690</strong> served.</p>
                     
                 </div>
-            </foote>
-            <foote class="when-small">
+            </footer>
+            <footer class="when-small">
                     <div>
                         <p style="color: #676d79;">Built by <a href="https://twitter.com/ajlkn" style="color: #676d79">AJ</a> with <a href="https://github.com/ajlkn/responsive-tools" style="color: #676d79">Responsive Tools</a><br>Licensed under the <a href="licanse.html" style="color: #676d79">Creative Commons Attribution</a> license</p> 
                     </div>
@@ -2172,7 +2578,32 @@
                     <p style="color: #676d79">© HTML5 UP.<br> Over <strong>15,850,690</strong> served.</p>
                     
                 </div>
-            </foote>
+            </footer>
+            <footer class="when-smaller">
+                    <div>
+                        <p style="color: #676d79;">Built by <a href="https://twitter.com/ajlkn" style="color: #676d79">AJ</a> with <a href="https://github.com/ajlkn/responsive-tools" style="color: #676d79">Responsive Tools</a><br>Licensed under the <a href="licanse.html" style="color: #676d79">Creative Commons Attribution</a> license</p> 
+                    </div>
+                        <br>
+                    <div>
+                        <form method="post" autocomplete="on">
+                                <input type="text" name="sub" id="sub" placeholder="&nbsp;Subscribe for email updates!">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                        <br>
+                <div class="skib">
+                    <div class="box1">
+					       <br>
+						          <button style="font-size:24px color: white;" class="c1 c fac" id="like4" onclick="changeText4()"><i class="fa fa-thumbs-up" style="color:white;"></i> Like</button>&nbsp;
+                                    <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fhtml5up.net%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=HTML5%20UP!%20Fully%20responsive%20HTML5%20and%20CSS3%20site%20templates&url=https%3A%2F%2Fhtml5up.net"><button style="font-size:24px color: white;" class="c1 twe"><i class="fa fa-twitter" style="color:white;"></i> Tweet</button></a>
+                    </div>
+                </div>
+                        <br><br>
+                <div>
+                    <p style="color: #676d79">© HTML5 UP.<br> Over <strong>15,850,690</strong> served.</p>
+                    
+                </div>
+            </footer>
         </div>
         
         
